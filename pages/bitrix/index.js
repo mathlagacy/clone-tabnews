@@ -1,26 +1,9 @@
 function Home() {
   return <html>
     <head>
-      <meta charset="UTF-8">
       <title>Mini App Bitrix</title>
+      <link rel="stylesheet" href="style.css"> </link>
       <script src="//api.bitrix24.com/api/v1/"></script>
-      <style>
-        body {
-          font-family: Arial;
-          padding: 20px;
-          transition: 0.3s;
-        }
-
-        .dark {
-          background-color: #1e1e1e;
-          color: white;
-        }
-
-        button {
-          padding: 10px 20px;
-          cursor: pointer;
-        }
-      </style>
     </head>
     <body>
 
@@ -29,11 +12,11 @@ function Home() {
 
       <script>
         BX24.init(function() {
-          console.log("App iniciado dentro do Bitrix");
+          console.log("App iniciado dentro do Bitrix")
         });
 
         function toggleDark() {
-          document.body.classList.toggle("dark");
+          document.body.classList.toggle("dark")
         }
       </script>
 
